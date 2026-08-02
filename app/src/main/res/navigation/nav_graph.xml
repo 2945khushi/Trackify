@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.trackify.IntroFragment"
+        android:label="Intro"
+        tools:layout="@layout/fragment_intro">
+        <action
+            android:id="@+id/action_introFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.trackify.DetailsFragment"
+        android:label="User Details"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_detailsFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.trackify.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.example.trackify.InputFragment"
+        android:label="Today's Progress"
+        tools:layout="@layout/fragment_input">
+        <action
+            android:id="@+id/action_inputFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.trackify.SummaryFragment"
+        android:label="Summary"
+        tools:layout="@layout/fragment_summary" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.trackify.ProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

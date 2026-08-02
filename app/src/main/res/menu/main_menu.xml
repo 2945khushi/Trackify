@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/user_name_display"
+        android:title="User Profile"
+        android:enabled="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_edit_details"
+        android:title="Edit Details"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_edit_progress"
+        android:title="Edit Today's Progress"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_view_summary"
+        android:title="Today's Progress"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_view_calendar"
+        android:title="History (Calendar)"
+        app:showAsAction="never" />
+</menu>

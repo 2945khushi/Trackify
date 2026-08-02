@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/tv_summary_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, User!"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryColor" />
+                <TextView
+                    android:id="@+id/tv_summary_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: --"
+                    android:textSize="14sp"
+                    android:textColor="@color/textColorSecondary" />
+                <TextView
+                    android:id="@+id/tv_summary_efficiency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Today's Efficiency: 85%"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TableLayout
+            android:id="@+id/table_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:stretchColumns="1"
+            android:background="@color/borderColor"
+            android:padding="1dp"
+            app:layout_constraintTop_toBottomOf="@id/card_user_info">
+
+            <TableRow android:background="@color/white" android:padding="8dp">
+                <TextView android:text="Metric" android:textStyle="bold" android:padding="8dp"/>
+                <TextView android:text="Achieved" android:textStyle="bold" android:padding="8dp"/>
+            </TableRow>
+            <TableRow android:background="@color/white" android:padding="8dp">
+                <TextView android:text="Study Hours" android:padding="8dp"/>
+                <TextView android:id="@+id/tv_sum_study" android:padding="8dp"/>
+            </TableRow>
+            <TableRow android:background="@color/white" android:padding="8dp">
+                <TextView android:text="Steps" android:padding="8dp"/>
+                <TextView android:id="@+id/tv_sum_steps" android:padding="8dp"/>
+            </TableRow>
+            <TableRow android:background="@color/white" android:padding="8dp">
+                <TextView android:text="Water" android:padding="8dp"/>
+                <TextView android:id="@+id/tv_sum_water" android:padding="8dp"/>
+            </TableRow>
+            <TableRow android:background="@color/white" android:padding="8dp">
+                <TextView android:text="Sleep" android:padding="8dp"/>
+                <TextView android:id="@+id/tv_sum_sleep" android:padding="8dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_learnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/table_progress">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/tv_sum_learnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColorPrimary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="DISCIPLINE BEATS MOTIVATION"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/secondaryColor"
+            app:layout_constraintTop_toBottomOf="@id/card_learnt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

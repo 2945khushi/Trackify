@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Midnight Bloom Palette -->
+    <color name="primaryColor">#673AB7</color> <!-- Deep Purple -->
+    <color name="primaryLightColor">#9575CD</color>
+    <color name="primaryDarkColor">#311B92</color>
+    <color name="secondaryColor">#FF4081</color> <!-- Pink -->
+    <color name="secondaryLightColor">#FF80AB</color>
+    <color name="secondaryDarkColor">#C51162</color>
+    <color name="backgroundColor">#F5F5F7</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="borderColor">#E0E0E0</color>
+    <color name="starColor">#FFD700</color> <!-- Golden -->
+</resources>
