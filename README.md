@@ -1,8 +1,8 @@
-# 📱 Trackify
+#  Trackify
 
 Trackify is an Android application developed using Kotlin and Firebase to help users track their daily habits and monitor personal progress through a simple and intuitive interface.
 
-## ✨ Features
+##  Features
 
 - Daily habit tracking
 - Progress summary dashboard
@@ -14,7 +14,7 @@ Trackify is an Android application developed using Kotlin and Firebase to help u
 - ListView-based habit management
 - Simple and user-friendly UI
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Kotlin
 - Android Studio
@@ -22,11 +22,11 @@ Trackify is an Android application developed using Kotlin and Firebase to help u
 - XML
 - SharedPreferences
 
-## 📦 Download
+##  Download
 
 Download the latest APK from the **Releases** section.
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - User authentication
 - Cloud synchronization
